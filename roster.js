@@ -11,6 +11,18 @@ const points = {
 
 function generateRoster() {
 // Код тут.
-}
 
+  // let roster = [];
+  // for (let i = 0; i < numbers.length; i++) {
+  //   let arr = []
+  //   arr = arr.concat(numbers[i], names[i], positions[i], [points[numbers[i]]])
+  //   console.log(arr)
+  //   roster.push(arr)
+  // }
+
+  const roster = numbers.map((el, i) => [el, names[i], positions[i], points[el]])
+  //  console.log(roster.length)
+   return roster
+}
 module.exports = {generateRoster};
+
